@@ -22,10 +22,11 @@ $theme-color-four: #0C6170
   font-family: Anton, sans-serif
 
 @mixin custom-text-shadow($offset-x, $offset-y, $blur-radius, $color)
-  text-shadow: $offset-x $offset-y $blur-radius$color
+  text-shadow: $offset-x $offset-y $blur-radius $color
 
 body
   background-color: $background-primary !important
+
 h1
   color: $primary-color
   @include custom-text-shadow(6px, 6px, 6px, $secondary-color)
@@ -60,3 +61,15 @@ nav span
 
 #jumbotron p
   @include custom-text-shadow(6px, 6px, 6px, $secondary-color)
+
+#items-albertogarel
+  margin-top: 5px
+  margin-bottom: 5px
+
+#items-albertogarel div div
+  padding: 20px
+
+#items-albertogarel img
+  display: flex
+  width: 5em
+  height: auto

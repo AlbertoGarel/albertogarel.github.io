@@ -52,4 +52,19 @@ nav span {
   text-shadow: 6px 6px 6px #000000;
 }
 
+#items-albertogarel {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#items-albertogarel div div {
+  padding: 20px;
+}
+
+#items-albertogarel img {
+  display: flex;
+  width: 5em;
+  height: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
