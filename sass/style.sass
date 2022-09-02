@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap')
+
+$font-stack: Anton, sans-serif
+$background-primary: #FFFFFF
+$primary-color: $background-primary
+$secondary-color: #000000
+$theme-color-one: #DBF5F0
+$theme-color-two: #A4E5E0
+$theme-color-three: #37BEB0
+$theme-color-four: #0C6170
+
+@mixin absolute
+  position: absolute
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  background-color: rgba($theme-color-three, .3)
+  display: flex
+
+@mixin fontFamily-headers
+  font-family: Anton, sans-serif
+
+@mixin custom-text-shadow($offset-x, $offset-y, $blur-radius, $color)
+  text-shadow: $offset-x $offset-y $blur-radius$color
+
+body
+  background-color: $background-primary !important
+h1
+  color: $primary-color
+  @include custom-text-shadow(6px, 6px, 6px, $secondary-color)
+
+nav .container-fluid
+  background-color: $theme-color-one
+
+nav img
+  width: 50px
+  height: 50px
+
+nav span
+  margin: 0 5px !important
+  color: $theme-color-four
+  @include fontFamily-headers
+
+#jumbotron .overlay
+  @include absolute
+
+#jumbotron
+  position: relative
+  display: flex
+  background-color: #0C6170
+  height: 30em
+  background-image: url("../assets/images/wave.png")
+  background-repeat: no-repeat
+  background-size: cover
+
+#jumbotron .overlay .container
+  align-self: flex-end
+  margin-bottom: 5em
+
+#jumbotron p
+  @include custom-text-shadow(6px, 6px, 6px, $secondary-color)

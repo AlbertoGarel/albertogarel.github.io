@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+body {
+  background-color: #FFFFFF !important;
+}
+
+h1 {
+  color: #FFFFFF;
+  text-shadow: 6px 6px 6px #000000;
+}
+
+nav .container-fluid {
+  background-color: #DBF5F0;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+}
+
+nav span {
+  margin: 0 5px !important;
+  color: #0C6170;
+  font-family: Anton, sans-serif;
+}
+
+#jumbotron .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(55, 190, 176, 0.3);
+  display: flex;
+}
+
+#jumbotron {
+  position: relative;
+  display: flex;
+  background-color: #0C6170;
+  height: 30em;
+  background-image: url("../assets/images/wave.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#jumbotron .overlay .container {
+  align-self: flex-end;
+  margin-bottom: 5em;
+}
+
+#jumbotron p {
+  text-shadow: 6px 6px 6px #000000;
+}
+
+/*# sourceMappingURL=style.css.map */

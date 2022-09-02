@@ -1,21 +1,54 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Bootstrap demo</title>
     <!-- custom CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+    <!--    bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
+<div class="container-fluid">
+    <nav class="navbar bg-light" id="primary_nav">
+        <div class="container-fluid">
+            <div class="navbar-brand  d-flex justify-content-start align-items-center">
+                <img src="./assets/icons/Logo_AlbertoGarel.png" alt="logo albertogarel"
+                     class="d-inline-block align-text-top">
+                <span class="display-6 inline">albertogarel</span>
+            </div>
+        </div>
+    </nav>
 
-<div class="container">
-    <h1>My First Bootstrap Page</h1>
-    <p>This is some text.</p>
+
+    <div class="jumbotron jumbotron-fluid" id="jumbotron">
+        <div class="overlay">
+            <div class="container">
+                <h1 class="display-3">Proyectos Documentados</h1>
+                <p class="lead text-light">
+                    Acceso a documentaciones e instrucciones de uso para proyectos y apps creados por Albertogarel
+                </p>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+<!--custom js-->
 <script src="./javascript/scripts.js"></script>
 </body>
 </html>
+
+
+
