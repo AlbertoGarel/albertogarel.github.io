@@ -30,6 +30,8 @@ body
 h1
   color: $primary-color
   @include custom-text-shadow(6px, 6px, 6px, $secondary-color)
+h2
+  color: $theme-color-four
 
 nav .container-fluid
   background-color: $theme-color-one
@@ -73,3 +75,10 @@ nav span
   display: flex
   width: 5em
   height: auto
+
+#content .card-title
+  color: $theme-color-four
+  @include fontFamily-headers
+#content .btn
+    background-color: $theme-color-three!important
+
