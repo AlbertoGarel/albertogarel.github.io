@@ -129,6 +129,14 @@ footer div:last-child {
   background-color: #0C6170;
 }
 
+@media (max-height: 300px) {
+  .overlay .container {
+    margin-bottom: 5vh;
+  }
+  .overlay .container p {
+    display: none !important;
+  }
+}
 @media (min-width: 320px) and (max-width: 576px) {
   .box {
     width: 110px;
