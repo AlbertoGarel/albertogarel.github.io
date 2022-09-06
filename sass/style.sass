@@ -27,6 +27,13 @@ $theme-color-four: #0C6170
 body
   background-color: $background-primary !important
 
+a
+  @include fontFamily-headers
+
+a, a:hover, a:focus, a:active
+  text-decoration: none !important
+  color: inherit !important
+
 h1
   color: $primary-color
   @include custom-text-shadow(6px, 6px, 6px, $secondary-color)
@@ -38,30 +45,33 @@ h2
 nav
   .container-fluid
     background-color: $theme-color-two
+
   img
     width: 50px
     height: 50px
+
   span
     margin: 0 5px !important
     color: $theme-color-four
     @include fontFamily-headers
 
-#jumbotron .overlay
-  @include absolute
 
 #jumbotron
+  height: calc(100vh - 76px)
   position: relative
   display: flex
   background-color: #0C6170
-  height: 30em
   background-image: url("../assets/images/wave.png")
   background-repeat: no-repeat
   background-size: cover
 
-#jumbotron
+  .overlay
+    @include absolute
+
   .overlay .container
     align-self: flex-end
-    margin-bottom: 5em
+    margin-bottom: 10em
+
   p
     @include custom-text-shadow(6px, 6px, 6px, $secondary-color)
 
@@ -69,8 +79,18 @@ nav
   .card-title
     color: $theme-color-four
     @include fontFamily-headers
+
+  a
+    color: $theme-color-four !important
+
   .btn
-    background-color: $theme-color-three !important
+    background-color: $primary-color !important
+    text-decoration: none !important
+    box-shadow: none !important
+    border: 2px solid $theme-color-four
+
+    &:active, &:visited
+      box-shadow: none !important
 
 .box
   width: 140px
@@ -90,7 +110,6 @@ nav
   background-repeat: no-repeat
   background-position: left
   background-attachment: fixed
-  background-size: calc(100% + 10px)
 
 .hdAndText
   display: flex
@@ -101,10 +120,12 @@ nav
 .multyBox
   display: flex
   justify-content: center
+
   .expBox.boxOne
     display: flex
     flex-direction: column
     justify-content: center
+
   .expBox.boxTwo
     display: flex
     justify-content: center
@@ -113,10 +134,11 @@ nav
 footer
   div:first-child
     background-color: $theme-color-three
+
   div:last-child
     background-color: $theme-color-four
 
-@media (max-width: 320px)
+@media (min-width: 320px) and (max-width: 576px)
   .box
     width: 110px
     height: 110px
@@ -124,3 +146,27 @@ footer
   .boxTwo .box
     width: 120px
     height: 120px
+
+  .background
+    background-size: 100%
+
+@media (min-width: 576.1px) and (max-width: 768px)
+  .background
+    background-size: 50%
+
+@media (min-width: 768.1px) and (max-width: 992px)
+  .background
+    background-size: 50%
+
+@media (min-width: 992.1px) and (max-width: 1200px)
+  .background
+    background-size: 60%
+
+@media (min-width: 1200.1px) and (max-width: 1400px)
+  .background
+    background-size: 70%
+
+@media (min-width: 1400.1px)
+  .background
+    background-size: 40%
+

@@ -3,6 +3,15 @@ body {
   background-color: #FFFFFF !important;
 }
 
+a {
+  font-family: Anton, sans-serif;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
 h1 {
   color: #FFFFFF;
   text-shadow: 6px 6px 6px #000000;
@@ -26,6 +35,15 @@ nav span {
   font-family: Anton, sans-serif;
 }
 
+#jumbotron {
+  height: calc(100vh - 76px);
+  position: relative;
+  display: flex;
+  background-color: #0C6170;
+  background-image: url("../assets/images/wave.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #jumbotron .overlay {
   position: absolute;
   top: 0;
@@ -35,20 +53,9 @@ nav span {
   background-color: rgba(55, 190, 176, 0.3);
   display: flex;
 }
-
-#jumbotron {
-  position: relative;
-  display: flex;
-  background-color: #0C6170;
-  height: 30em;
-  background-image: url("../assets/images/wave.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #jumbotron .overlay .container {
   align-self: flex-end;
-  margin-bottom: 5em;
+  margin-bottom: 10em;
 }
 #jumbotron p {
   text-shadow: 6px 6px 6px #000000;
@@ -58,8 +65,17 @@ nav span {
   color: #0C6170;
   font-family: Anton, sans-serif;
 }
+#content a {
+  color: #0C6170 !important;
+}
 #content .btn {
-  background-color: #37BEB0 !important;
+  background-color: #FFFFFF !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  border: 2px solid #0C6170;
+}
+#content .btn:active, #content .btn:visited {
+  box-shadow: none !important;
 }
 
 .box {
@@ -82,7 +98,6 @@ nav span {
   background-repeat: no-repeat;
   background-position: left;
   background-attachment: fixed;
-  background-size: calc(100% + 10px);
 }
 
 .hdAndText {
@@ -114,7 +129,7 @@ footer div:last-child {
   background-color: #0C6170;
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .box {
     width: 110px;
     height: 110px;
@@ -122,6 +137,34 @@ footer div:last-child {
   .boxTwo .box {
     width: 120px;
     height: 120px;
+  }
+  .background {
+    background-size: 100%;
+  }
+}
+@media (min-width: 576.1px) and (max-width: 768px) {
+  .background {
+    background-size: 50%;
+  }
+}
+@media (min-width: 768.1px) and (max-width: 992px) {
+  .background {
+    background-size: 50%;
+  }
+}
+@media (min-width: 992.1px) and (max-width: 1200px) {
+  .background {
+    background-size: 60%;
+  }
+}
+@media (min-width: 1200.1px) and (max-width: 1400px) {
+  .background {
+    background-size: 70%;
+  }
+}
+@media (min-width: 1400.1px) {
+  .background {
+    background-size: 40%;
   }
 }
 
