@@ -35,17 +35,16 @@ h2
   color: $theme-color-four
   @include fontFamily-headers
 
-nav .container-fluid
-  background-color: $theme-color-one
-
-nav img
-  width: 50px
-  height: 50px
-
-nav span
-  margin: 0 5px !important
-  color: $theme-color-four
-  @include fontFamily-headers
+nav
+  .container-fluid
+    background-color: $theme-color-two
+  img
+    width: 50px
+    height: 50px
+  span
+    margin: 0 5px !important
+    color: $theme-color-four
+    @include fontFamily-headers
 
 #jumbotron .overlay
   @include absolute
@@ -59,24 +58,23 @@ nav span
   background-repeat: no-repeat
   background-size: cover
 
-#jumbotron .overlay .container
-  align-self: flex-end
-  margin-bottom: 5em
+#jumbotron
+  .overlay .container
+    align-self: flex-end
+    margin-bottom: 5em
+  p
+    @include custom-text-shadow(6px, 6px, 6px, $secondary-color)
 
-#jumbotron p
-  @include custom-text-shadow(6px, 6px, 6px, $secondary-color)
-
-#content .card-title
-  color: $theme-color-four
-  @include fontFamily-headers
-
-#content .btn
-  background-color: $theme-color-three !important
+#content
+  .card-title
+    color: $theme-color-four
+    @include fontFamily-headers
+  .btn
+    background-color: $theme-color-three !important
 
 .box
   width: 140px
   height: 140px
-  //margin: 2em
   padding: 1em
   display: flex
   justify-content: center
@@ -94,31 +92,29 @@ nav span
   background-attachment: fixed
   background-size: calc(100% + 10px)
 
-.multyBox
-  //display: -webkit-display
-  //display: -ms-displaybox
-  //display: -ms-display
-  //display: -webkit-box
-  //display: -ms-flexbox
-  display: flex
-  justify-content: center
-
 .hdAndText
   display: flex
   flex-direction: column
   flex-wrap: nowrap
   justify-content: center
 
-.multyBox .expBox.boxOne
-  display: flex
-  flex-direction: column
-  justify-content: center
-
-.multyBox .expBox.boxTwo
+.multyBox
   display: flex
   justify-content: center
-  align-items: center
+  .expBox.boxOne
+    display: flex
+    flex-direction: column
+    justify-content: center
+  .expBox.boxTwo
+    display: flex
+    justify-content: center
+    align-items: center
 
+footer
+  div:first-child
+    background-color: $theme-color-three
+  div:last-child
+    background-color: $theme-color-four
 
 @media (max-width: 320px)
   .box
