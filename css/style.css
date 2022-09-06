@@ -55,7 +55,7 @@ nav span {
 }
 #jumbotron .overlay .container {
   align-self: flex-end;
-  margin-bottom: 10em;
+  margin-bottom: 15vh;
 }
 #jumbotron p {
   text-shadow: 6px 6px 6px #000000;
