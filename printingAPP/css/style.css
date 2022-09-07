@@ -23,6 +23,11 @@ body {
     font-family: "Open Sans",sans-serif;
     font-size:14px;
 }
+.image-responsive{
+    display: flex;
+    width: 100%;
+    height: auto
+}
 
 a {
     transition: all 0.35s ease 0s;
@@ -30,9 +35,10 @@ a {
      -moz-transition: all 0.35s ease 0s;
 }
 #loading {
-    background-image: url("../img/preloader.GIF");
+    background-image: url("../img/logo_printingAPP.png");
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 200px;
     left: 50%;
     margin: -100px 0 0 -100px;
@@ -364,7 +370,7 @@ header .header-content {
 
 /*-------- how it works css --------------*/
 #how-it-works {
-    padding: 120px 0 0;
+    padding: 120px 0;
      width: 100%;
 }
 #how-it-works::before {
@@ -384,7 +390,7 @@ header .header-content {
 }
 /*-------- Screenshots --------------*/
 #Screenshots {
-    padding: 120px 0 0;
+    padding: 120px 0;
      width: 100%;
      position:relative;
      background: linen none repeat scroll 0 0;
