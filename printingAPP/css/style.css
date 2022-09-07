@@ -134,7 +134,7 @@ a {
 }
 .angle::before {
     border-bottom: 72px solid #333;
-    border-right: 960px solid transparent;
+    border-right: 740px solid transparent;
     left: 0;
 }
 .angle::before, .angle::after {
@@ -152,7 +152,7 @@ a {
 }
 .angle2::before {
     border-top: 72px solid #333;
-    border-right: 960px solid transparent;
+    border-right: 50vw solid transparent;
     left: 0;
 }
 .angle2::before, .angle2::after {
@@ -748,7 +748,7 @@ height:272px;
 }
 .angle::before {
     border-bottom: 72px solid #333;
-    border-right: 600px solid transparent;
+    border-right: 490px solid transparent;
     left: 0;
 }
 .angle::before, .angle::after {
@@ -766,7 +766,7 @@ height:272px;
 }
 .angle2::before {
     border-top: 72px solid #333;
-    border-right: 600px solid transparent;
+    border-right: 490px solid transparent;
     left: 0;
 }
 .angle2::before, .angle2::after {
@@ -914,7 +914,7 @@ height:272px;
 }
 .angle::before {
     border-bottom: 30px solid #333;
-    border-right: 480px solid transparent;
+    border-right: 374px solid transparent;
     left: 0;
 }
 .angle::before, .angle::after {
@@ -932,7 +932,7 @@ height:272px;
 }
 .angle2::before {
     border-top: 30px solid #333;
-    border-right: 480px solid transparent;
+    border-right: 374px solid transparent;
     left: 0;
 }
 .angle2::before, .angle2::after {
