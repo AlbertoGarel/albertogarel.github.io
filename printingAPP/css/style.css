@@ -23,11 +23,12 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
 }
-.modal-dialog{
-    width: fit-content!important;
+
+.modal-dialog {
+    width: fit-content !important;
     height: 100vh;
-    overflow: hidden!important;
-    margin: 0 auto!important;
+    overflow: hidden !important;
+    margin: 0 auto !important;
 }
 
 a {
@@ -285,8 +286,8 @@ nav.affix-top {
 
 /*-------- header css --------------*/
 
-header {
-    background: url("../img/bg_slilder-001.jpg");
+header,
+.header-docs {
     background-attachment: fixed;
     background-size: cover;
     height: 670px;
@@ -295,6 +296,14 @@ header {
     -webkit-transition: all 0.35s ease 0s;
     -moz-transition: all 0.35s ease 0s;
     overflow: hidden;
+}
+
+header {
+    background: url("../img/bg_slilder-001.jpg");
+}
+
+.header-docs {
+    background: url("../img/puzzle.jpg");
 }
 
 header .header-content {
@@ -1134,4 +1143,28 @@ header .header-content {
     .textright {
         margin-top: 5px;
     }
+}
+
+/*============ DOCS STYLES ================*/
+.docList {
+    margin-bottom: 0;
+}
+
+.docList, .docList ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.docList a {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.docList a i:last-child {
+    margin-left: auto;
+}
+
+.docList i {
+    font-size: 1.5em;
+    margin-right: 10px;
 }
