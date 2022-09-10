@@ -33,13 +33,29 @@ body {
 .nav>li>a {
     padding: 10px 10px!important;
 }
-
+hr{
+    background-color: black;
+}
 .docs{
     background-color: #a77aaa;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     color: #fff;
+}
+.docs-image{
+    display: flex;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding: 3em 0;
+}
+.container-centered-rows{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 a {
@@ -409,7 +425,8 @@ header .header-content {
     overflow: hidden;
 }
 
-#about::before{
+#about::before,
+#doclist::before{
     background: rgba(255, 255, 255, 0.5);
     content: "";
     height: 10%;
