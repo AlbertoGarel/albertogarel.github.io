@@ -30,6 +30,9 @@ body {
     overflow: hidden !important;
     margin: 0 auto !important;
 }
+.nav>li>a {
+    padding: 10px 10px!important;
+}
 
 .docs{
     background-color: #a77aaa;
@@ -184,7 +187,7 @@ a {
 }
 
 .angle2::before, .angle2::after {
-    top: 0;
+    top: -10px;
     content: "";
     height: 0;
     position: absolute;
@@ -396,7 +399,8 @@ header .header-content {
 }
 
 /*-------- about css --------------*/
-#about {
+#about,
+#doclist{
     background-color: #E2E1E1;
     background-size: 10%;
     position: relative;
@@ -405,7 +409,7 @@ header .header-content {
     overflow: hidden;
 }
 
-#about::before {
+#about::before{
     background: rgba(255, 255, 255, 0.5);
     content: "";
     height: 10%;
@@ -875,7 +879,7 @@ header .header-content {
     }
 
     .angle2::before, .angle2::after {
-        top: 0;
+        top: -10px!important;
         content: "";
         height: 0;
         position: absolute;
@@ -975,7 +979,7 @@ header .header-content {
     }
 
     .angle2::before, .angle2::after {
-        top: 0;
+        top: -10px;
         content: "";
         height: 0;
         position: absolute;
@@ -1074,7 +1078,7 @@ header .header-content {
     }
 
     .angle2::before, .angle2::after {
-        top: 0;
+        top: -10px;
         content: "";
         height: 0;
         position: absolute;
@@ -1122,7 +1126,7 @@ header .header-content {
     }
 
     .angle2::before, .angle2::after {
-        top: 0;
+        top: -10px;
         content: "";
         height: 0;
         position: absolute;
