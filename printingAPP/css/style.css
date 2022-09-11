@@ -30,30 +30,56 @@ body {
     overflow: hidden !important;
     margin: 0 auto !important;
 }
-.nav>li>a {
-    padding: 10px 10px!important;
+
+.nav > li > a {
+    padding: 10px 10px !important;
 }
-hr{
+
+hr {
     background-color: black;
 }
-.text-orange{
+
+.text-orange {
     color: #ff4c00;
 }
-.docs{
-    background-color: #a77aaa;
+
+.docs {
+    /*background-color: #a77aaa;*/
+    background-color: mediumvioletred;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     color: #fff;
 }
-.docs-image{
+.docs:hover{
+    background-color: #ee7ec4!important;
+}
+
+.docs-image {
     display: flex;
     width: 60%;
     height: auto;
     margin: auto;
     padding: 3em 0;
 }
-.container-centered-rows{
+
+.ir-arriba {
+    display: none;
+    border-radius: 100%;
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999999;
+}
+
+.ir-arriba i {
+    font-size: 5em;
+    color: mediumvioletred;
+}
+
+.container-centered-rows {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -420,7 +446,7 @@ header .header-content {
 /*-------- about css --------------*/
 #about,
 #doclist,
-#production{
+#production {
     background-color: #E2E1E1;
     background-size: 10%;
     position: relative;
@@ -431,7 +457,7 @@ header .header-content {
 
 #about::before,
 #doclist::before,
-#production::before{
+#production::before {
     background: rgba(255, 255, 255, 0.5);
     content: "";
     height: 10%;
@@ -474,7 +500,7 @@ header .header-content {
 
 /*-------- Screenshots --------------*/
 #Screenshots,
-#home{
+#home {
     padding: 120px 0;
     width: 100%;
     position: relative;
@@ -584,7 +610,7 @@ header .header-content {
 
 /*-------- price --------------*/
 #Price,
-#basedata-func{
+#basedata-func {
     padding: 120px 0;
     width: 100%;
     position: relative;
@@ -903,7 +929,7 @@ header .header-content {
     }
 
     .angle2::before, .angle2::after {
-        top: -10px!important;
+        top: -10px !important;
         content: "";
         height: 0;
         position: absolute;

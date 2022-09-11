@@ -33,9 +33,15 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
+<span class="ir-arriba rounded-circle"><i class="fa fa-arrow-circle-o-up"></i></span>
 <!-- =============== Preloader =============== -->
 <div id="preloader">
     <div id="loading">
@@ -260,7 +266,8 @@
                         </a>
                         <ul id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
                             <li class="">
-                                <a href="#production" class="list-group-item list-group-item-action list-group-item-secondary">
+                                <a href="#production"
+                                   class="list-group-item list-group-item-action list-group-item-secondary">
                                     Cómo funciona
                                 </a>
                             </li>
@@ -643,24 +650,74 @@
         <span class="angle2"></span>
         <span class="angle"></span>
 
-        <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s"
-             style="margin-bottom: 3em;">
-            <h2><span>Botón </span>crear producciones</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s"
+                 style="margin-bottom: 3em;">
+                <h2><span>Botón </span>crear producciones</h2>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInLeft animated" data-wow-delay=".5s">
+                <h2 id="crear-producciones" style="margin-top: 0">¿Cómo crear producciones?</h2>
+                <p>
+                    <span class="text-orange">Antes de poder crear una producción principal, debe completar las distintas secciones de la base de
+                    datos</span>. Una vez disponga de los datos, al pulsar el botón central de la aplicación, aparecerá
+                    un
+                    formulario donde podrá escoger y completar la información requerida para configurar la producción.
+                </p>
+                <p>
+                    En la <span class="text-orange">primera vista</span> se encontrará un selector de fecha, línea de
+                    producción, paginación, producto y
+                    tipo de medición. Estos estarán nutridos con los datos previamente introducidos en sus secciones
+                    correspondientes en la sección "base de datos" a excepción de la fecha. <span class="text-orange">El selector de paginación
+                    estará deshabilitado hasta que no escoja una línea de producción, garantizando que solo aparezca la
+                    máxima paginación posible de la misma.</span>
+                </p>
+                <p>
+                    En la <span class="text-orange">segunda vista</span> se introducirán los datos relativos a
+                    cantidades de ejemplares a producir. Se
+                    contemplan tanto válidos como maculatura (nulos). Por orden nos encontramos con tirada prevista,
+                    ediciones y ejemplares nulos estimados. Debajo de cada campo existe un selector tipo "switch" donde
+                    le dará la opción de activar ciertos cálculos para concretar una predicción de ejemplares nulos en
+                    la producción. Puede escoge entre usar valores de descarte predefinidos por el usuario por
+                    porcentaje en tirada prevista o por ediciones, o también dejar que la aplicación calcule una media
+                    entre las producciones registradas basándose en datos como ejemplares, producciones y producto.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInRight animated rounded" data-wow-delay=".5s">
+                <p>
+                    En la <span class="text-orange">tercera vista</span> se visualizará, dependiendo de la paginación
+                    seleccionada, los autopasters
+                    disponibles. Si la paginación prevé usar 1/2 bobina, será seleccionado automáticamente al estar
+                    registrado en la base de datos. Podrá ser cambiado si lo desea. Si no se contempla su uso, aparecerá
+                    como disponible junto al resto de autopasters. Si tiene registradas producciones anteriores, al
+                    presionar el "switch2", <span class="text-orange">la aplicación seleccionará los autopasters empleados más comúnmente en
+                    producciones de la misma paginación de manera automática. También seleccionará de manera automática
+                    los autopasters cuando la producción deba hacer empleo de todos ellos, diferenciando 1/2 bobina si
+                    fuera el caso.</span>
+                </p>
+                <p>
+                    Si la aplicación no detecta ningún error y presiona el botón "calcular" situado en la parte inferior
+                    derecha, registrará los datos y asignará la bobinas que estén disponibles en la base de datos. De
+                    manera automática será redirigido a la pantalla principal una vez completado el registro.
+                </p>
+            </div>
         </div>
+
+        <h3>Vista de producción</h3>
+        <hr class="col-xs-12">
+
         <article class="container-centered-rows">
             <div class="col-xs-12 col-sm-6 col-md-6 wow bounceIn animated headding" data-wow-delay=".5s">
-                <img src="img/owl1.jpg" alt="home image" class="docs-image"/>
+                <img src="img/owl2.jpg" alt="home image" class="docs-image"/>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInRight animated bg-secondary rounded" data-wow-delay=".5s">
-                <h2 id="crear-producciones">¿Cómo funciona?</h2>
+            <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
+                <h2>Descripción y funcionamiento</h2>
                 <p>
-                    <span class="text-orange">Solo lectura.</span> Aquí se podrán ver las bobinas en uso de las
-                    producciones abiertas. Si un autopaster no dispone de bobina asignada, su código de bobina y su
-                    peso se encontrarán vacíos a la espera de actualizar los datos al ser escaneados desde su
-                    sección de autopaster en la producción principal de la aplicación.
+                    prueba prueba prueba
                 </p>
             </div>
         </article>
+
     </div>
 </section>
 <!-- Footer -->
