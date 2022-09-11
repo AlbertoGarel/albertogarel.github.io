@@ -41,7 +41,6 @@
 </head>
 
 <body>
-<span class="ir-arriba rounded-circle"><i class="fa fa-arrow-circle-o-up"></i></span>
 <!-- =============== Preloader =============== -->
 <div id="preloader">
     <div id="loading">
@@ -713,8 +712,75 @@
             <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
                 <h2>Descripción y funcionamiento</h2>
                 <p>
-                    prueba prueba prueba
+                    Cuando se accede a la vista de producción contamos con dos apartados: la sección de producción que
+                    contiene la lista de autopasters con sus bobinas asignadas y la parte de información y cálculo total
+                    de producción. A esta última se accede deslizando hacia la izquierda.
                 </p>
+                <p>
+                    En la sección de producción se divide por autopasters, donde cada encabezado contiene el número
+                    identificativo de cada uno que haya sido incluido en la producción. Justo por debajo se incluyen las
+                    tarjetas con la información relativa a la o las bobinas asignadas.
+                </p>
+                <p>
+                    En el encabezado de autopaster, además del número identificativo, podemos ver varias opciones y
+                    datos según número de bobinas asignadas y kilogramos totales contenidos. Estos son :
+                </p>
+                <ul>
+                    <li>
+                        <p><span class="text-orange">
+                        Indicadores de peso:
+                        </span></p>
+                        <p>Se sitúa en la parte central del encabezado y existen tres posibles opciones:</p>
+                        <ul>
+                            <li><span class="text-orange">Si no se muestra nada<span>, el peso total de las bobinas asignadas es suficiente para
+                                completar satisfactoriamente la producción.
+                            </li>
+                            <li>
+                                Si el contenido tiene el <span class="text-orange">color de fondo amarillo</span>,
+                                significa que tiene kilogramos
+                                suficientes según los cálculos de la producción, pero deberá estar atento a problemas,
+                                como roturas de banda, que añadan más consumo de papel. <span class="text-orange">La aplicación permite continuar
+                                con el cálculo final de la producción.</span>
+                            </li>
+                            <li>
+                                Si el contenido tiene el <span class="text-orange">color de fondo rojo</span>, significa
+                                que no tiene kilogramos
+                                suficientes según los cálculos de la producción y se debe agregar una bobina de papel
+                                adicional. <span class="text-orange">La aplicación NO permite continuar
+                                con el cálculo final de la producción.</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><span class="text-orange">Intercambiador de posición:</span></p>
+                        <p>
+                            Solo aparece cuando hay dos o más bobinas y su función es la de adelantar o retrasar
+                            posiciones en el orden de consumo de las bobinas en el autopaster donde son asignadas.
+                        </p>
+                        <p>
+                            Al pulsar sobre él, se muestra un modal donde podremos intercambiar las posiciones. La
+                            aplicación recalcula el consumo de cada una de ellas a partir de su nueva ubicación.
+                        </p>
+                    </li>
+                    <li>
+                        <p><span class="text-orange">Lector de códigos:</span></p>
+                        <p>
+                            El lector de códigos será visible en todo momento. Es el encargado de registrar las bobinas
+                            a la producción.
+                            <span class="text-orange">Solo soporta códigos que contengan 16 dígitos</span>. Cada bobina
+                            registrada
+                            formará parte del propietario del producto en el cual ha sido escaneada, pudiendo cambiar si
+                            es de nuevo escaneada en otro producto diferente al anterior propietario.
+                        </p>
+                        <p>
+                            Además, al registrar una nueva bobina, <span class="text-orange">la aplicación preguntará si es nueva o no</span>. Si lo es,
+                            registrará la bobina directamente, pero <span class="text-orange">si no es nueva, le permitirá introducir el peso
+                            actual y la aplicación calculará el radio para completar el registro. En ambas acciones la
+                            aplicación hará los cálculos necesarios de peso tanto para el autopaster como para toda la
+                            producción.</span>
+                        </p>
+                    </li>
+                </ul>
             </div>
         </article>
 
@@ -749,6 +815,7 @@
         </div>
     </div><!-- =============== container end =============== -->
 </footer>
+<span class="ir-arriba"><i class="fa fa-arrow-circle-o-up"></i></span>
 <!-- =============== jQuery =============== -->
 <script src="js/jquery.js"></script>
 <!-- =============== Bootstrap Core JavaScript =============== -->
