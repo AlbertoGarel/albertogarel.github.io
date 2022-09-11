@@ -682,7 +682,7 @@
                     entre las producciones registradas basándose en datos como ejemplares, producciones y producto.
                 </p>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInRight animated rounded" data-wow-delay=".5s">
+            <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
                 <p>
                     En la <span class="text-orange">tercera vista</span> se visualizará, dependiendo de la paginación
                     seleccionada, los autopasters
@@ -705,26 +705,51 @@
         <h3>Vista de producción</h3>
         <hr class="col-xs-12">
 
-        <article class="container-centered-rows">
-            <div class="col-xs-12 col-sm-6 col-md-6 wow bounceIn animated headding" data-wow-delay=".5s">
-                <img src="img/owl2.jpg" alt="home image" class="docs-image"/>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 fadeInDown animated d-flex flex-column">
+                <img src="img/owl2.jpg" alt="home image" class="docs-image wow bounceIn animated header"/>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
-                <h2>Descripción y funcionamiento</h2>
+            <div class="col-xs-12 col-sm-4 col-md-4 fadeInDown animated d-flex flex-column">
+                <img src="img/owl2.jpg" alt="home image" class="docs-image wow bounceIn animated header"/>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 fadeInDown animated d-flex flex-column">
+                <img src="img/owl2.jpg" alt="home image" class="docs-image wow bounceIn animated header"/>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h2>Descripción</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 wow fadeInLeft animated" data-wow-delay=".5s">
+                <!--                <h2  style="margin-top: 0">Descripción y funcionamiento</h2>-->
                 <p>
-                    Cuando se accede a la vista de producción contamos con dos apartados: la sección de producción que
-                    contiene la lista de autopasters con sus bobinas asignadas y la parte de información y cálculo total
+                    Cuando se accede a la vista de producción contamos con dos apartados: la sección de producción
+                    que
+                    contiene la lista de autopasters con sus bobinas asignadas y la parte de información y cálculo
+                    total
                     de producción. A esta última se accede deslizando hacia la izquierda.
                 </p>
                 <p>
                     En la sección de producción se divide por autopasters, donde cada encabezado contiene el número
-                    identificativo de cada uno que haya sido incluido en la producción. Justo por debajo se incluyen las
+                    identificativo de cada uno que haya sido incluido en la producción. Justo por debajo se incluyen
+                    las
                     tarjetas con la información relativa a la o las bobinas asignadas.
                 </p>
+                <!--            <img src="img/owl2.jpg" alt="home image" class="docs-image wow bounceIn animated"/>-->
+                <!--        </div>-->
+                <!--        <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">-->
                 <p>
-                    En el encabezado de autopaster, además del número identificativo, podemos ver varias opciones y
+                    En el <span class="text-orange">encabezado</span> de autopaster, además del número
+                    identificativo,
+                    podemos ver varias opciones y
                     datos según número de bobinas asignadas y kilogramos totales contenidos. Estos son :
                 </p>
+
+                <figure class="figure figure-75 wow bounceIn animated header" data-wow-delay="1s">
+                    <img src="img/encabezado.jpg" alt="home image" class="docs-image" style="padding-bottom: 0"/>
+                    <figcaption class="figure-caption caption-60">Encabezado de autopaster.</figcaption>
+                </figure>
+
                 <ul>
                     <li>
                         <p><span class="text-orange">
@@ -732,20 +757,24 @@
                         </span></p>
                         <p>Se sitúa en la parte central del encabezado y existen tres posibles opciones:</p>
                         <ul>
-                            <li><span class="text-orange">Si no se muestra nada<span>, el peso total de las bobinas asignadas es suficiente para
+                            <li><span class="text-orange">Si no se muestra nada</span>, el peso total de las bobinas
+                                asignadas es suficiente para
                                 completar satisfactoriamente la producción.
                             </li>
                             <li>
                                 Si el contenido tiene el <span class="text-orange">color de fondo amarillo</span>,
                                 significa que tiene kilogramos
-                                suficientes según los cálculos de la producción, pero deberá estar atento a problemas,
+                                suficientes según los cálculos de la producción, pero deberá estar atento a
+                                problemas,
                                 como roturas de banda, que añadan más consumo de papel. <span class="text-orange">La aplicación permite continuar
                                 con el cálculo final de la producción.</span>
                             </li>
                             <li>
-                                Si el contenido tiene el <span class="text-orange">color de fondo rojo</span>, significa
+                                Si el contenido tiene el <span class="text-orange">color de fondo rojo</span>,
+                                significa
                                 que no tiene kilogramos
-                                suficientes según los cálculos de la producción y se debe agregar una bobina de papel
+                                suficientes según los cálculos de la producción y se debe agregar una bobina de
+                                papel
                                 adicional. <span class="text-orange">La aplicación NO permite continuar
                                 con el cálculo final de la producción.</span>
                             </li>
@@ -754,35 +783,155 @@
                     <li>
                         <p><span class="text-orange">Intercambiador de posición:</span></p>
                         <p>
-                            Solo aparece cuando hay dos o más bobinas y su función es la de adelantar o retrasar
-                            posiciones en el orden de consumo de las bobinas en el autopaster donde son asignadas.
+                            Solo aparece cuando hay dos o más bobinas:
                         </p>
-                        <p>
-                            Al pulsar sobre él, se muestra un modal donde podremos intercambiar las posiciones. La
-                            aplicación recalcula el consumo de cada una de ellas a partir de su nueva ubicación.
-                        </p>
+                        <ul>
+                            <li>Su función es la de adelantar o retrasar
+                                posiciones en el orden de consumo de las bobinas en el autopaster donde son
+                                asignadas.
+                            </li>
+                            <li>
+                                <p>
+                                    Al pulsar sobre él, se muestra un modal donde podremos intercambiar las
+                                    posiciones.
+                                    La
+                                    aplicación recalcula el consumo de cada una de ellas a partir de su nueva
+                                    ubicación.
+                                </p>
+                            </li>
+                        </ul>
                     </li>
                     <li>
                         <p><span class="text-orange">Lector de códigos:</span></p>
                         <p>
-                            El lector de códigos será visible en todo momento. Es el encargado de registrar las bobinas
-                            a la producción.
-                            <span class="text-orange">Solo soporta códigos que contengan 16 dígitos</span>. Cada bobina
-                            registrada
-                            formará parte del propietario del producto en el cual ha sido escaneada, pudiendo cambiar si
-                            es de nuevo escaneada en otro producto diferente al anterior propietario.
+                            El lector de códigos será visible en todo momento.
                         </p>
-                        <p>
-                            Además, al registrar una nueva bobina, <span class="text-orange">la aplicación preguntará si es nueva o no</span>. Si lo es,
-                            registrará la bobina directamente, pero <span class="text-orange">si no es nueva, le permitirá introducir el peso
+                        <ul>
+                            <li>
+                                <p>
+                                    Es el encargado de registrar las bobinas
+                                    a la producción.
+                                    <span class="text-orange">Solo soporta códigos que contengan 16 dígitos</span>.
+                                    Cada
+                                    bobina
+                                    registrada
+                                    formará parte del propietario del producto en el cual ha sido escaneada,
+                                    pudiendo
+                                    cambiar si
+                                    es de nuevo escaneada en otro producto diferente al anterior propietario.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Además, al registrar una nueva bobina, <span class="text-orange">la aplicación preguntará si es nueva o no</span>.
+                                    Si lo es,
+                                    registrará la bobina directamente, pero <span class="text-orange">si no es nueva, le permitirá introducir el peso
                             actual y la aplicación calculará el radio para completar el registro. En ambas acciones la
                             aplicación hará los cálculos necesarios de peso tanto para el autopaster como para toda la
                             producción.</span>
-                        </p>
+                                </p>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
-        </article>
+            <div class="col-xs-12 col-sm-12 col-md-12 wow fadeInRight animated" data-wow-delay=".5s">
+                <p>
+                    La <span class="text-orange">tarjeta de bobina</span> es donde encontramos toda la información
+                    sobre
+                    la
+                    misma. Consta de varias secciones en
+                    las que podemos distinguir:
+                </p>
+                <figure class="figure figure-75 wow bounceIn animated" data-wow-delay="1s">
+                    <img src="img/card.jpg" alt="home image" class="docs-image"
+                         style="padding-bottom: 0"/>
+                    <figcaption class="figure-caption caption-60">Tarjeta de bobina en producción.</figcaption>
+                </figure>
+                <ul>
+                    <li>
+                        <p><span class="text-orange">Sección de código de bobina:</span></p>
+                        <ul>
+                            <li>
+                                Se encuentra en la <span class="text-orange">parte superior</span> y consta de dos
+                                partes: el propio código de la bobina y un
+                                botón, situado a la derecha, para eliminar la bobina de la producción. <span
+                                    class="text-orange">Aunque elimine la
+                            bobina, podrá asignarla de nuevo en otro autopaster y no será eliminada de la base de datos
+                            ni de las siguientes producciones que la contengan. La aplicación recalculará los datos una
+                            vez eliminada.</span>
+                            </li>
+                            <li>
+                                <span class="text-orange">Cuando la bobina sea nueva se distinguirá el código numérico y
+                                    su imagen de código, en cambio, si está incompleta, solo muestra el valor numérico.</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><span class="text-orange">Sección de datos de bobina:</span></p>
+                        <ul>
+                            <li>
+                                En la <span class="text-orange">parte central</span> se encuentra todos los datos
+                                referidos
+                                a peso, tipo de bobina, campo para introducir el radio final y los consumos de
+                                papel.
+                            </li>
+                            <li><span class="text-orange">Indicador el tipo de bobina</span>: bobina entera o 1/2
+                                bobina.
+                            </li>
+                            <li><span class="text-orange">Peso original</span> de la bobina.</li>
+                            <li><span class="text-orange">Resto inicial</span> es el peso con el que cuenta la
+                                bobina en
+                                la
+                                producción.
+                            </li>
+                            <li><span class="text-orange">Resto final</span> indica la cantidad de kilogramos
+                                consumidos
+                                durante la producción de la bobina.
+                            </li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="text-orange">Sección de previsión de bobina:</span>
+                        </p>
+                        <ul>
+                            <li>Indica la previsión de la aplicación en relación con el resto final estimado cuando
+                                finalice
+                                la producción.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <h2>Funcionamiento</h2>
+        </div>
+        <p>
+            Hay varios detalles a tener en cuenta cuando se decida crear una producción. En este apartado se tratará de
+            explicar con detalle el funcionamiento de la aplicación a la hora de abordar una o varias producciones.
+        </p>
+        <ul>
+            <li>
+                <p>
+                    Las producciones de los distintos productos programados para ser realizados de manera consecutiva,
+                    <span class="text-orange">deberán crearse en orden de uso, en especial aquellas que utilicen bobinas de un mismo propietario.</span>
+                    La aplicación no dejará ejecutar ningún cálculo si encuentra una bobina en una producción anterior
+                    que sea compartida al no poder concretar el peso inicial de la misma.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Al crear la producción, <span class="text-orange">si existen dos o más bobinas de un mismo propietario asignadas a un
+                    autopaster, solo se asignará una y siempre la de menor peso inicial</span>. Para incorporar la siguiente
+                    registrada tendrá que escanear el código de la bobina para vincularla a cualquier autopaster,
+                    incluido en el que esté asignada.
+                </p>
+            </li>
+            <li></li>
+        </ul>
 
     </div>
 </section>

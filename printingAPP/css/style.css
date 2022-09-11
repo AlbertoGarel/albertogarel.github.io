@@ -42,6 +42,21 @@ hr {
 .text-orange {
     color: #ff4c00;
 }
+.figure-75{
+    width: 75vw;
+    display: block;
+    margin: 2em auto;
+}
+.caption-60{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.image-fluid{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
 
 .docs {
     /*background-color: #a77aaa;*/
@@ -455,9 +470,9 @@ header .header-content {
     overflow: hidden;
 }
 
-#about::before,
-#doclist::before,
-#production::before {
+/*#doclist::before,*/
+/*#production::before,*/
+#about::before{
     background: rgba(255, 255, 255, 0.5);
     content: "";
     height: 10%;
