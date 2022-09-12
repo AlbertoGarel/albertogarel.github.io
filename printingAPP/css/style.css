@@ -37,21 +37,13 @@ body {
 
 hr {
     background-color: black;
+    height: 0.06em;
 }
 
 .text-orange {
     color: #ff4c00;
 }
-.figure-75{
-    width: 75vw;
-    display: block;
-    margin: 2em auto;
-}
-.caption-60{
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-}
+
 .image-fluid{
     display: flex;
     width: 100%;
@@ -90,7 +82,7 @@ hr {
 }
 
 .ir-arriba i {
-    font-size: 5em;
+    font-size: 4em;
     color: mediumvioletred;
 }
 
@@ -285,7 +277,7 @@ a:hover {
 /*-------- nav css --------------*/
 
 .navbar-brand > img {
-    height: 50px;
+    height: 40px;
     transition: all 0.35s ease 0s;
     -webkit-transition: all 0.35s ease 0s;
     -moz-transition: all 0.35s ease 0s;
@@ -313,7 +305,7 @@ nav.affix {
 }
 
 nav.affix img {
-    height: 38px;
+    height: 34px;
     margin-top: 5px;
     transition: all 0.35s ease 0s;
     -webkit-transition: all 0.35s ease 0s;
@@ -449,7 +441,7 @@ header .header-content {
     position: absolute;
     width: 0;
     transition: all .3s ease 0s;
-    -webkit-transition: all .3s easen 0s;
+    -webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
 }
 
@@ -515,11 +507,13 @@ header .header-content {
 
 /*-------- Screenshots --------------*/
 #Screenshots,
+#search,
 #home {
     padding: 120px 0;
     width: 100%;
     position: relative;
     background: linen none repeat scroll 0 0;
+    overflow: hidden;
 }
 
 /*-------- contact --------------*/
@@ -529,6 +523,7 @@ header .header-content {
     padding: 60px 0 0px;
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 #contact .btn-block {
@@ -539,7 +534,7 @@ header .header-content {
     margin-bottom: 50px;
     width: 150px;
     transition: all .3s ease 0s;
-    -webkit-transition: all .3s easen 0s;
+    -webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
 }
 
@@ -554,7 +549,7 @@ header .header-content {
     border: 1px solid #666;
     color: #fff;
     transition: all .3s ease 0s;
-    -webkit-transition: all .3s easen 0s;
+    -webkit-transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
 }
 
@@ -625,10 +620,12 @@ header .header-content {
 
 /*-------- price --------------*/
 #Price,
+#settings,
 #basedata-func {
     padding: 120px 0;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .price-wrapper .price-title {

@@ -20,17 +20,35 @@ jQuery(function ($) {
         }
     });
 
-    $('.ir-arriba').click(function(){
-        $('body, html').animate({
-            scrollTop: '0px'
-        }, 300);
-    });
+    if ($('#doclist').length) {
+        console.log('existe')
+        $('.ir-arriba').click(function () {
+            $('body, html').animate({
+                scrollTop: $('#doclist').offset().top
+            }, 1000);
+        });
 
-    $(window).scroll(function(){
-        if( $(this).scrollTop() > 0 ){
-            $('.ir-arriba').slideDown(300);
-        } else {
-            $('.ir-arriba').slideUp(300);
-        }
-    });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > $('#doclist').offset().top + 400) {
+                $('a.ir-arriba').fadeIn('slow');
+            } else {
+                $('a.ir-arriba').fadeOut('slow');
+            }
+        });
+    } else {
+        console.log('no existe')
+        $('a.ir-arriba').click(function () {
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 1000);
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 0) {
+                $('a.ir-arriba').fadeIn('slow');
+            } else {
+                $('a.ir-arriba').fadeOut('slow');
+            }
+        });
+    }
 });
