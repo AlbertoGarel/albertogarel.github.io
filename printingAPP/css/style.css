@@ -23,7 +23,10 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
 }
-
+.font-italic{
+    font-style: italic;
+    font-weight: bolder;
+}
 .modal-dialog {
     width: fit-content !important;
     height: 100vh;
@@ -451,6 +454,7 @@ header .header-content {
 }
 
 /*-------- about css --------------*/
+#tips,
 #about,
 #doclist,
 #production {
@@ -799,7 +803,21 @@ header .header-content {
 .price-wrapper {
     margin-bottom: 50px;
 }
-
+ /*----------- Tips section ---------*/
+#accordionTips a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1em;
+}
+#accordionTips .card-body{
+    padding: 0 1em 1em;
+}
 /*-------- popup css --------------*/
 .imghover {
     position: relative;
