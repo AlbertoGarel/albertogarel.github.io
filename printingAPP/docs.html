@@ -1234,6 +1234,31 @@
             <div class="col-xs-12 col-sm-12 col-md-12 wow fadeInRight animated">
                 <div id="accordionTips" role="tablist">
                     <div class="card">
+                        <div class="card-header" role="tab" id="headingTipZero">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseTipZero"
+                                   aria-expanded="false"
+                                   aria-controls="collapseTipZero">
+                                    ¿Puedo hacer uso de todas las funcionalidades con la aplicación recién instalada?
+                                    <i class="fa fa-solid fa-caret-down"></i>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseTipZero" class="collapse" role="tabpanel" aria-labelledby="headingTipZero">
+                            <div class="card-body">
+                                <p>
+                                    Producción simple y cálculo de resto de bobinas(cálculo individual) será lo único
+                                    que podrá usar sin introducir los datos necesarios.
+                                </p>
+                                <p>
+                                    Tenga en cuenta siempre que la primera acción a realizar en el primer uso de la
+                                    aplicación es completar sus preferencias en la sección "settings" y "base de datos"
+                                    para poder hacer un uso completo de la aplicación.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
                         <div class="card-header" role="tab" id="headingTipOne">
                             <h5 class="mb-0 rounded-lg">
                                 <a data-toggle="collapse" href="#collapseTipOne" aria-expanded="true"
@@ -1243,7 +1268,6 @@
                                 </a>
                             </h5>
                         </div>
-
                         <div id="collapseTipOne" class="collapse" role="tabpanel" aria-labelledby="headingTipOne">
                             <div class="card-body">
                                 <p>
@@ -1403,6 +1427,44 @@
                                 <p>
                                     Los informes no se conservarán en las exportaciones ni importaciones.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="headingTipSeven">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseTipSeven"
+                                   aria-expanded="false"
+                                   aria-controls="collapseTipSeven">
+                                    ¿Cómo actúa en producción principal la eliminación de una bobina?
+                                    <i class="fa fa-solid fa-caret-down"></i>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseTipSeven" class="collapse" role="tabpanel" aria-labelledby="headingTipSeven">
+                            <div class="card-body">
+                                <p>
+                                    Hay varios puntos a tener en cuenta:
+                                </p>
+                                <ul>
+                                    <li>
+                                        Se pueden eliminar bobinas y volver a agregarlas a una producción de manera
+                                        indefinida. Puede, por ejemplo, eliminar en autopaster A y volver a registrarla
+                                        en autopaster B.
+                                    </li>
+                                    <li>
+                                        Al volver a registrar una bobina eliminada o registrada en la base de datos, le
+                                        informará de su código, peso actual y radio. Si es nueva y ya está registrada,
+                                        el apartado "radio" del aviso le indicará "bobina nueva". En cambio, si está
+                                        usada, le indicará su último radio registrado.
+                                    </li>
+                                    <li>
+                                        Cuando elimine una bobina de cualquier producción, será eliminada de todas las
+                                        producciones posteriores, nunca de las anteriores. La aplicación seguirá
+                                        encargándose de los cálculos, aunque no se encuentre en el mismo autopaster en
+                                        distintas producciones.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
