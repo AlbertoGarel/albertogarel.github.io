@@ -21,17 +21,18 @@ const imageLanguages = {
 if (url.includes("privacy")) {
     let hash = ''
     if (!window.location.hash) {
-        hash = location.hash = 'esp'
+        hash = location.hash = '#esp'
     } else {
         hash = location.hash
     }
+
     let insertElements = document.getElementById('insertHtml')
     let selected = document.getElementById('selected_language');
     let contentChilds = document.getElementById('flags_content').children;
     // predefinido según url hash
     insertElements.innerHTML = languagesContent.printingapp[hash.substring(1)]
     document.getElementById('privacy-h1').innerText = `${imageLanguages[hash.substring(1)].title}`
-    document.title = `${imageLanguages[hash.substring(1)].title}`
+    document.title = imageLanguages[hash.substring(1)].title
     selected.setAttribute('src', imageLanguages[hash.substring(1)].urlImage)
     selected.setAttribute('alt', imageLanguages[hash.substring(1)].alt)
     document.querySelector(`#flags_content ${window.location.hash}`).setAttribute('style', "display: none")
@@ -52,7 +53,7 @@ if (url.includes("privacy")) {
         selected.setAttribute('src', imageLanguages[lang].urlImage)
         selected.setAttribute('alt', imageLanguages[lang].alt)
         document.getElementById('privacy-h1').innerText = `${imageLanguages[lang].title}`
-        document.title = `${imageLanguages[lang].title}`
+        document.title = imageLanguages[lang].title
         window.location.hash = lang
     }
 }
