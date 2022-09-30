@@ -22,6 +22,7 @@ if (url.includes("privacy")) {
     let hash = ''
     if (!window.location.hash) {
         hash = location.hash = '#esp'
+        location.reload()
     } else {
         hash = location.hash
     }
