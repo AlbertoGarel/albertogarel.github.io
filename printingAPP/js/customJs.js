@@ -5,7 +5,6 @@ function setSameHeight() {
         finalHeight.push(sameHeight[i].clientHeight)
     }
     finalHeight.sort((a, b) => b - a);
-    console.log(finalHeight)
 
     for (let i = 0; i < sameHeight.length; i++) {
         sameHeight[i].style.height = finalHeight[0] + 'px'
@@ -21,7 +20,6 @@ jQuery(function ($) {
     });
 
     if ($('#doclist').length) {
-        console.log('existe')
         $('.ir-arriba').click(function () {
             $('body, html').animate({
                 scrollTop: $('#doclist').offset().top
@@ -36,7 +34,6 @@ jQuery(function ($) {
             }
         });
     } else {
-        console.log('no existe')
         $('a.ir-arriba').click(function () {
             $('body, html').animate({
                 scrollTop: '0px'
