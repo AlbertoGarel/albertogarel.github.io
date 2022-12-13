@@ -1,34 +1,490 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <!-- =============== Custom CSS =============== -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Elegance - Creative HTML5 Template</title>
+    <!--
+    Elegance Template
+    https://templatemo.com/tm-528-elegance
+    -->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
 </head>
+
 <body>
 
-<div class="p-5 d-flex flex-column justify-content-evenly align-items-center">
-    <div class="d-flex flex-column justify-content-center align-items-center">
-        <div class="d.flex flex-column">
-            <p class="display-4 text-danger" style="font-weight: bolder">Oppps!!</p>
-            <h1 class="text-center">ComandAPP está de reformas.</h1>
+<div id="video">
+    <div class="preloader">
+        <div class="preloader-bounce">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <a href="../index.html" class="btn btn-primary btn-lg active m-3 shadow" role="button" aria-pressed="true">Regresar al sitio</a>
     </div>
 
-    <img class="img-fluid" src="./assets/images/maintenance.png" alt="Under construction"/>
-    <h3> &copy; 2022 Albertogarel</h3>
+    <header id="header">
+        <div class="container-fluid">
+            <div class="navbar">
+                <a href="#" id="logo" class="capitalize" title="Comandapp Free">
+                    Comandapp Free
+                </a>
+                <div class="navigation-row">
+                    <nav id="navigation">
+                        <button type="button" class="navbar-toggle"><i class="fa fa-bars"></i></button>
+                        <div class="nav-box navbar-collapse">
+                            <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                <li data-menuanchor="slide01" class="active"><a href="#slide01">Inicio</a></li>
+                                <li data-menuanchor="slide02"><a href="#slide02">Caracteristicas</a></li>
+                                <li data-menuanchor="slide03"><a href="#slide03">Servicios</a></li>
+                                <li data-menuanchor="slide04"><a href="#slide04">Ventajas</a></li>
+                                <li data-menuanchor="slide05"><a href="#slide05">Funcionamiento</a></li>
+                                <li data-menuanchor="slide06"><a href="#slide06">Configuración</a></li>
+                                <li data-menuanchor="slide07"><a href="#slide07">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="images/video-bg.mp4" type="video/mp4">
+    </video>
+
+    <div id="fullpage" class="fullpage-default">
+
+        <div class="section animated-row" data-section="slide01">
+            <div class="section-inner">
+                <div class="welcome-box">
+                    <h1 class="animate d-flex justify-content-center" data-animate="fadeInUp">
+                        <img src="images/comanda_free_azul_con_logo.png" alt="logo comandapp free"
+                             class="images-responsive center"
+                        />
+                    </h1>
+                    <p class="animate" data-animate="fadeInUp">
+                        Carta digital para restaurantes
+                    </p>
+                    <div class="scroll-down next-section animate" data-animate="fadeInUp"><img
+                            src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide02">
+            <div class="section-inner">
+                <div class="about-section">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 wide-col-laptop">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="about-contentbox">
+                                        <div class="animate" data-animate="fadeInUp">
+                                            <span>Comandapp Free</span>
+                                            <h2>características</h2>
+                                            <p>
+                                                Comanda digital para restaurantes con base de datos ampliamente
+                                                configurable y fácil de configurar.
+                                                Además, también existe la posibilidad de recibir pedidos desde casa.
+                                            </p>
+                                        </div>
+                                        <div class="facts-list owl-carousel">
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-solid fa-qrcode counter-icon"
+                                                       aria-hidden="true"></i>
+                                                    <span>acceso por<br> código QR</span>
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-solid fa-mobile-phone counter-icon"
+                                                       aria-hidden="true"></i>
+                                                    <span>smartphone<br>tablet</span>
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-solid fa-globe counter-icon" aria-hidden="true"></i>
+                                                    <span>tecnología<br> web</span>
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-solid fa-database counter-icon"
+                                                       aria-hidden="true"></i>
+                                                    <span>base de<br> datos</span>
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-solid fa-warning counter-icon"
+                                                       aria-hidden="true"></i>
+                                                    <span>lista de<br> alérgenos</span>
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-solid fa-share-alt counter-icon"
+                                                       aria-hidden="true"></i>
+                                                    <span>redes<br> sociales</span>
+                                                </div>
+                                            </div>
+                                            <div class="item animate" data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <i class="fa fa-solid fa-list-ol counter-icon"
+                                                       aria-hidden="true"></i>
+                                                    <span>listado<br> de pedidos</span>
+                                                </div>
+                                            </div>
+                                            <div class="item d-flex justify-content-center align-items-center animate counter-icon"
+                                                 data-animate="fadeInUp">
+                                                <div class="counter-box">
+                                                    <span>y más<br>...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <figure class="animate" data-animate="fadeInUp"><img
+                                            src="images/comandAPP_mockup.png" class="rounded" alt=""></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide03">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Servicios</span>
+                            <h2>¿Cómo te ayudamos?</h2>
+                        </div>
+                        <div class="services-section">
+                            <div class="services-list owl-carousel">
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-bookmark"
+                                                                      aria-hidden="true"></i></span>
+                                        <h3>servicio gratuito mediante publicidad</h3>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+                                        <h3>Integración en tu página web</h3>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-desktop"
+                                                                      aria-hidden="true"></i></span>
+                                        <h3>totalmente Responsive</h3>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-mobile"
+                                                                      aria-hidden="true"></i></span>
+                                        <h3>vista para móviles y tablets</h3>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-comments"
+                                                                      aria-hidden="true"></i></span>
+                                        <h3>ayuda para configuraciones</h3>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-database"
+                                                                      aria-hidden="true"></i></span>
+                                        <h3>24 houras "Up Time"</h3>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-bell" aria-hidden="true"></i></span>
+                                        <h3>actualizaciones gratuitas</h3>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-camera"
+                                                                      aria-hidden="true"></i></span>
+                                        <h3>optimización de imágenes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide04">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Comandapp Free</span>
+                            <h2>¿Cómo te ayuda?</h2>
+                        </div>
+                        <div class="skills-row animate" data-animate="fadeInDown">
+                            <div class="row">
+                                <div class="col-md-8 offset-md-2">
+                                    <div class="skill-item">
+                                        <h6>imagen</h6>
+                                        <div class="skill-bar">
+                                            <span>+ 80%</span>
+                                            <div class="filled-bar-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <h6>agilidad</h6>
+                                        <div class="skill-bar">
+                                            <span>+ 60%</span>
+                                            <div class="filled-bar"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <h6>visibilidad</h6>
+                                        <div class="skill-bar">
+                                            <span>+ 70%</span>
+                                            <div class="filled-bar-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item last-skill">
+                                        <h6>control</h6>
+                                        <div class="skill-bar">
+                                            <span>100%</span>
+                                            <div class="filled-bar-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide06">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Comandapp Free</span>
+                            <h2>¿Cómo funciona?</h2>
+                        </div>
+                        <div class="gallery-section">
+                            <div class="gallery-list owl-carousel">
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/captcomandapp1.jpg" class="images-height" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Dos versiones</h4>
+                                            <p>
+                                                Puedes escoger entre una sencilla carta sin imágenes o la versión
+                                                integral,
+                                                más completa y con más posibilidades.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/captcomandapp2.jpg" class="images-height" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Comparte qr</h4>
+                                            <p>
+                                                Desde la misma aplicación, sin complicaciones.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/captcomandapp3.jpg" class="images-height" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Redes sociales</h4>
+                                            <p>
+                                                Tus comensales podrán compartir la ubicación de tu negocio,
+                                                imágenes, opiniones de manera más sencilla bajo tu marca.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/captcomandapp4.jpg" class="images-height" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Imágenes</h4>
+                                            <p>
+                                                Añade, cambia... Haz tus platos más apetecibles con una buena captura.
+                                                Potencia tu producto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/captcomandapp5.jpg" class="images-height" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>agregar platos a lista de comanda</h4>
+                                            <p>
+                                                Reduce los tiempos al tomar nota. Tus clientes podrán añadir tantos
+                                                platos
+                                                como deseen a su lista de comanda.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/captcomandapp6.jpg" class="images-height" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Alérgenos disponibles</h4>
+                                            <p>
+                                                Listado de alérgenos disponible para tu añadir a tus platos de manera
+                                                sencilla.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item animate" data-animate="fadeInUp">
+                                    <div class="portfolio-item">
+                                        <div class="thumb">
+                                            <img src="images/captcomandapp7.jpg" class="images-height" alt="">
+                                        </div>
+                                        <div class="thumb-inner animate" data-animate="fadeInUp">
+                                            <h4>Intuitiva</h4>
+                                            <p>
+                                                Fácil de usar y sencilla, sin líos. Solo debes preocuparte de tu
+                                                negocio.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide05">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Comandapp Free</span>
+                            <h2>¿Cómo la configuro?</h2>
+                        </div>
+                        <div class="col-md-8 offset-md-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe loading="lazy" class="embed-responsive-item"
+                                        src="images/comandApp.pdf"
+                                        style="display: block; margin-left: auto; margin-right: auto; width: 640px; height: 1020px;"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section animated-row" data-section="slide07">
+            <div class="section-inner">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 wide-col-laptop">
+                        <div class="title-block animate" data-animate="fadeInUp">
+                            <span>Contact</span>
+                            <h2>Get In Touch!</h2>
+                        </div>
+                        <div class="contact-section">
+                            <img class="mb-4 pr-4 pl-4" src="images/socialPymes_Imagotipo_blanco.png" alt="logo comandapp free"/>
+                            <a class="btn btn-primary info-button btn-md active" role="button" aria-pressed="true"
+                               href="https://socialpymesvlc.es/contacto/" target="_blank"
+                            >
+                                MÁS INFORMACIÓN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="social-icons">
+        <img class="rotate-deg-90" src="images/socialPymes_Imagotipo_blanco.png" alt="logo comandapp free"/>
+<!--        <div class="text-right">-->
+<!--            <ul class="social-icons">-->
+<!--                <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>-->
+<!--                <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>-->
+<!--                <li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>-->
+<!--                <li><a href="#" title="Instagram"><i class="fa fa-behance"></i></a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+    </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
+<script src="js/jquery.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/fullpage.min.js"></script>
+
+<script src="js/scrolloverflow.js"></script>
+
+<script src="js/owl.carousel.min.js"></script>
+
+<script src="js/jquery.inview.min.js"></script>
+
+<script src="js/form.js"></script>
+
+<script src="js/custom.js"></script>
+
+
 </body>
 </html>
