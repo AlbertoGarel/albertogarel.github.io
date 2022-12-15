@@ -57,11 +57,11 @@
 .rotate-deg-90{
     display: flex;
     transform: rotate(-90deg);
-    width: 14em;
+    width: 8em;
     height: auto;
 }
 #social-icons {
-    right: -85px!important;
+    right: -47px!important;
 }
 .item{
     height: 100%;
